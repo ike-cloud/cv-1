@@ -3,75 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <title>简历</title>
 </head>
 
 <body>
-    <style id="style"></style>
-    <div id="html"></div>
-    <div id="div1wrapper"></div>
-    <div id="div1"></div>
-    <style>* {
-            margin: 0;
-            padding: 0;
-        }
-
+    <style id="style">
         * {
-            box-sizing: border-box;
+            margin: 0;
+            padding: 0
         }
 
-        *::after {
-            box-sizing: border-box;
-        }
-
-        *::before {
-            box-sizing: border-box;
+        *,
+        :after,
+        :before {
+            box-sizing: border-box
         }
 
         #demo {
-            word-break: break-all;
+            word-break: break-all
         }
 
         #div1 {
             position: fixed;
             right: 20px;
             transform: translateX(-50%);
-            top: 20px;
+            top: 20px
         }
 
-        #div1::before {
-            content: ' ';
+        #div1:after,
+        #div1:before {
+            content: " ";
             display: block;
-            position: absolute;
-
-        }
-
-        #div1::after {
-            content: ' ';
-            display: block;
-            position: absolute;
-
+            position: absolute
         }
 
         @media(max-width:500px) {
             #html {
-                height: 50vh;
-                overflow: auto;
+                overflow: auto
             }
 
-            #div1wrapper {
-                height: 50vh;
+            #div1wrapper,
+            #html {
+                height: 50vh
             }
 
             #div1 {
-
                 position: relative;
                 top: 0;
-                right: 0;
+                right: 0
             }
-        }</style>
-    <script src="/main.1f19ae8e.js"></script>
+        }
+    </style>
+    <div id="html"></div>
+    <div id="div1wrapper"></div>
+    <div id="div1"></div>
+    <script src="dist/main.001c3ff2.js"></script>
 </body>
 
 </html>
